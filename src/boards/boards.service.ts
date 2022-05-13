@@ -24,8 +24,8 @@ export class BoardsService {
     return found;
   }
 
-  createBoard(CreateBoardDto: CreateBoardDto): Promise<Board> {
-    return this.boardRepository.createBoard(CreateBoardDto);
+  createBoard(createBoardDto: CreateBoardDto): Promise<Board> {
+    return this.boardRepository.createBoard(createBoardDto);
   }
 
   async deleteBoard(id: number): Promise<void> {
